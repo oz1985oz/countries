@@ -35,10 +35,7 @@ function build(one) {
 			class: "currencies"
 		}).appendTo(text);
 		$.each(value, function( index, value ) {
-
 			$('<span>', {text: value + " "}).appendTo(currencies);
-			console.log(value);
-
 		});
 	});
 }
