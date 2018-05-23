@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countries</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<style>
+		input {
+			margin: .5rem;
+		}
+		.btn, h1 {
+			margin-left: 1rem;
+			margin-bottom: 2rem;
+		}
+		img {
+			width: 100%;
+		}
+		.img {
+			margin-right: 1.5rem;
+			/*box-sizing: border-box;*/
+			width: 30%;
+		}
+		.country-info {
+			display: flex;
+			/*flex-wrap: nowrap;*/
+		}
+		.card {
+			margin: 1rem;
+		}
+		p {
+			display: block;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Countries of the World</h1>
+	<form>
+		<div class="form-group col-md-6">
+			<label for="name">Enter country</label>
+			<input class="form-control" type="search" name="name">
+			<input class="form-control" type="submit" value="Search">
+		</div>
+	</form>
+	<button class="btn">Search All</button>
+	<main></main>
+
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
