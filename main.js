@@ -21,7 +21,7 @@ function createAll(json) {
 }
 
 function build(one) {
-	var card = $('<div>', {class: "card col-md-6"}).appendTo('main');
+	var card = $('<div>', {class: "card"}).appendTo('main');
 	var country = $('<div>', {class: "country-info"}).appendTo(card);
 	var img = $('<div>', {class: "img"}).appendTo(country);
 	$('<img>', {src: one.flag}).appendTo(img);

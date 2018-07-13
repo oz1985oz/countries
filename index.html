@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Countries</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<style>
@@ -26,15 +27,28 @@
 		}
 		.country-info {
 			display: flex;
+			/*align-items: center;*/
 			/*flex-wrap: nowrap;*/
 		}
 		.card {
 			margin: 1rem;
+			width: 45%;	
 		}
 		p {
 			display: block;
-			
 		}
+		main {
+			display: flex;	
+			flex-wrap: wrap;
+		}
+
+		@media only screen and (max-width: 665px) {
+		    .card {
+				/*margin: 1rem;*/
+				width: 100%;	
+			}
+		}
+
 	</style>
 </head>
 <body>
