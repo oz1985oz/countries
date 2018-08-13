@@ -5,6 +5,15 @@ $("button").click(function() {
 	})
 });
 
+$(document).on('input', "input[name='name']", (e) => {
+	e.preventDefault();
+	$("main").empty();
+	var name = $("input[name='name']").val();
+	$.get('https://restcountries.eu/rest/v2/name/' + name, function (json) {
+		createAll(json);
+	})
+});
+
 $("input[value='Search']").click(function(e) {
 	e.preventDefault();
 	$("main").empty();
@@ -35,7 +44,7 @@ function build(one) {
 			class: "currencies"
 		}).appendTo(text);
 		$.each(value, function( index, value ) {
-			$('<span>', {text: value + " "}).appendTo(currencies);
+			$('<span>', {text: value + " | "}).appendTo(currencies);
 		});
 	});
 }
